@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt-tu-dien</title>
+</head>
+<body>
+               <label for="inputWord">Hãy nhập từ cần tìm</label>
+                <input type="text" id="inputWord">
+                    <button onclick="timkiem()" type="button"></button>
+                <input type="text" id="outputWord">
+
+<script>
+    let tiengAnh = ['duck', 'class', 'hot'];Dịch
+    let tiengViet = ['vịt', 'lớp', 'nóng'];
+    function timkiem() {
+        let input = document.getElementById('inputWord').value;
+        for (let word in tiengAnh) {
+            if (tiengAnh[word] == input) {
+                document.getElementById('outputWord').value = tiengViet[word];
+                return ;
+            }
+        }
+        alert('Từ điển không chứa từ này!');
+    }
+</script>
+</body>
+</html>
