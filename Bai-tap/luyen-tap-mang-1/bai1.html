@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.
+Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.-->
+
+<!--<input type="number" id="nhapphantu" oninput="themphantuvaotrongmang()" >
+<button onclick="hienthimang()"> Hiển thị mảng</button>
+<p id="show" ></p>-->
+<script>
+    let mang = [2,45,3,35,34,11,14,13,76,22];
+    let sum =0;
+    for(let i = 0;i<mang.length;i++){
+        if(mang[i]>=10){
+            sum +=mang[i];
+            i++;
+        }
+        document.write(sum +"<br>");
+    }
+ /*   let i =0;
+    function themphantuvaotrongmang() {
+        mang[i] = document.getElementById("nhapphantu").value;
+        i++;
+        document.getElementById("nhapphantu").value;
+    }
+    function hienthimang(){
+        for(let count=0; count<mang.length;count++){
+            if(mang[count] %2 ===0 || mang[count] >=10){
+                document.getElementById("show").innerHTML = mang;
+                count++;
+            }
+        }
+    }*/
+  /*Bước 1:  tạo 1 mảng có 10 phần tử
+    Bước 2: tạo 2 biến count để đếm số phần tử >= 10 và biến sum để tính tổng các phẩn tử thoả mãn
+    Bước 3: dùng vòng lặp duyệt lần lượt các phần tử trong mảng ban đầu. Trong mỗi lần lặp  kiểm tra:
+        Nếu giá trị tại vị trí artay[i] >= 10 thì tăng count lên 1 đơn vị và sum = sum + array[i]
+    Bước 4: in ra kết quả */
+</script>
+</body>
+</html>

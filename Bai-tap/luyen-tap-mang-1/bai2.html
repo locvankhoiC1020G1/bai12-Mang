@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.-->
+<script>
+    let a = [1,2,78,4,5,6,7,8,9,10,11];
+    let max=0;
+    let vitri=0;
+    for (let i = 0; i <a.length ; i++) {
+        if(a[i]>max){
+            max = a[i];
+            vitri = i;
+        }
+    }document.write("phan tu lon nhat la" +max + "tai vi tri" + vitri );
+
+</script>
+</body>
+</html>
